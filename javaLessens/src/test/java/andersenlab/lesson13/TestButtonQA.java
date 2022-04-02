@@ -18,7 +18,7 @@ public class TestButtonQA {
         driver.manage().window().maximize();
         driver.get(website);
         Thread.sleep(5000);
-        
+
         WebElement header = driver.findElement(By.xpath("//h2[normalize-space()='Hire lead experts in custom software development']"));
         js.executeScript("arguments[0].scrollIntoView();", header);
         WebElement button = driver.findElement(By.xpath("//div[text()='QA']"));
